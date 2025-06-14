@@ -42,7 +42,7 @@ st.title("Email/SMS Spam Classifier")
 input_sms = st.text_area("Enter the message")
 if st.button('Predict'):
     if(len(input_sms)==0):
-        st.header("Please enter the sms or mail")
+        st.header("Please enter the SMS or Email")
         # 1. Preprocess the input text
         transformed_sms=transform_text(input_sms)
         # 2. Vectorization
