@@ -43,6 +43,7 @@ input_sms = st.text_area("Enter the message")
 if st.button('Predict'):
     if(len(input_sms)==0):
         st.header("Please enter the SMS or Email")
+    else:
         # 1. Preprocess the input text
         transformed_sms=transform_text(input_sms)
         # 2. Vectorization
